@@ -1,18 +1,13 @@
 public class Surrounding {
-    int[][] distance_matrix;
+    private Solution[] list_of_perms;
 
     public Surrounding(int[][] matrix) {
-        this.distance_matrix = matrix;
+        this.getN(matrix);
+        //na bazie danej permutacji generuj otoczenie typu invert
     }
-    public void getZero() {
-        //losowa permutacja jako rozwiazanie poczatkowe
-    }
-    public void getN() {
+
+    public void getN(int[][] matrix) {
 
     }
-    public double getObjectiveFunction() {
-        double sum = 0;
-        //for (int i = 0; i < distance_matrix.le)
-        return 0;
-    }
+
 }
