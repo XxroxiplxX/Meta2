@@ -12,10 +12,15 @@ public class Tabu extends Algorythm{
                 {1,5},
                 {3,456},
                 {2,345},
-                {78,123}
+                {78,123},
+                {324,786},
+                {142,3456},
+                {75,90}
         };
-        solution = new Solution(matrix, 4);
-        surrounding = new Surrounding(solution, 4);
+        solution = new Solution(matrix, 6);
+        solution.printSolution();
+        surrounding = new Surrounding(solution, 6);
+        surrounding.printSurrounding();
 
     }
 
@@ -26,7 +31,7 @@ public class Tabu extends Algorythm{
         while (c > 0) {
 
 
-            System.out.println("dziala");
+            //System.out.println("dziala");
             c--;
         }
         thread.stop();

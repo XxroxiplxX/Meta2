@@ -10,6 +10,11 @@ public class Solution {
     public void getZero() {
         //losowa permutacja jako rozwiazanie poczatkowe
     }
+    public void printSolution() {
+        for (int i = 0; i < length; i++) {
+            System.out.println("Lp: " + i + " x: " + matrix_of_distances[i][0] + " y: " + matrix_of_distances[i][1]);
+        }
+    }
     public int[][] getMatrix_of_distances() {
         return this.matrix_of_distances;
     }

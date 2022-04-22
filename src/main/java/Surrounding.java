@@ -9,10 +9,10 @@ public class Surrounding {
         this.matrix_of_points = solution.getMatrix_of_distances();
         this.lenght = lenght;
         Random rand = new Random();
-        list_of_perms = new Solution[200];
-        for (int i = 0; i < 200; i++) {
+        list_of_perms = new Solution[20];
+        for (int i = 0; i < 20; i++) {
 
-            int tmp = rand.nextInt(lenght - 1);
+            int tmp = rand.nextInt(lenght - 4);
             list_of_perms[i] = new Solution(invert(tmp, tmp + 4), lenght);
 
             //invert ma odwrocic kolejnosc elementow od i do j, w macierzy 2D musimy zdefuniowac jakis porzadek na elementach
@@ -23,8 +23,8 @@ public class Surrounding {
         this.matrix_of_points = matrix;
         this.lenght = lenght;
         Random rand = new Random();
-        list_of_perms = new Solution[200];
-        for (int i = 0; i < 200; i++) {
+        list_of_perms = new Solution[20];
+        for (int i = 0; i < 20; i++) {
 
             int tmp = rand.nextInt(lenght - 1);
             list_of_perms[i] = new Solution(invert(tmp, tmp + 4), lenght);
@@ -49,6 +49,12 @@ public class Surrounding {
 
         }
         return matrix;
+    }
+    public void printSurrounding() {
+        for (int i = 0; i < 20; i++) {
+            System.out.println("kolejna permutacja:");
+            list_of_perms[i].printSolution();
+        }
     }
 
 }
